@@ -7,33 +7,113 @@
     
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
+    <script src="https://kit.fontawesome.com/d8a42ee375.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap|Open+Sans"/>
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>PetMatch</title>
 
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <h1>PetMatch</h1>
-                    <h2>
-                        <p>this is a paragraph</p>
-                        <p> this is another paragraph</p>
-                        <p></p>aragraph
-                        <p> lfjlsdjflasdjf</p>
-                    </h2>
+                <div class="col-4">
+                    <h3><a class="btn btn-sm" href="#"><i class="fas fa-paw fa-2x fa-cog"></i></a></h3>
+                </div>
+                    <div class="col-4">
+                    <h1 class="text-center">PetMatch</h1>
+                </div>
+                <div class="col-4 text-right">
+                    <button class="btn btn-outline-light">login</button>
+                </div>
+                <div class="col text-right">
+                    <form class="" action="">
+                        <input type="text" placeholder="       search" name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
             </div>
-
         </div>
-   
-
     </header>
+<!--
+    <nav class="navbar navbar-fixed-top ">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PM
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Dog Love </a></li>
+                <li class="dropdown "> Cat Love </li>
+                <li class="dropdown"> Other Love </li>
+                <li class="dropdown"> Agencies </li>
+            </ul>
+        </div>
+    </nav> -->
+<div class="row justify-content-center">
+    <div class=" col-md-3">
+        <h2 class="">
+            <div class="dropdown">
+                <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><i class="fas fa-chevron-circle-down"></i></span></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Breed</a></li>
+                    <li><a class="dropdown-item" href="#">Age</a></li>
+                    <li><a class="dropdown-item" href="#">other?</a></li>
+                </ul>
+            </div>
+            
+        </h2>
+    </div>
+    <div class="col-md-3">
+        <h2>
+            <div class="dropdown">
+                <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">breed</a></li>
+                    <li><a class="dropdown-item" href="#">age</a></li>
+                    <li><a class="dropdown-item" href="#">longhair</a></li>
+                    <li><a class="dropdown-item" href="#">shorthair</a></li>
+                </ul>
+            </div>
+            
+        </h2>
+    </div>
+    <div class="col-md-3">
+        <h2>
+            <div class="dropdown">
+                <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">small & furry</a></li>
+                    <li><a class="dropdown-item" href="#">reptile</a></li>
+                    <li><a class="dropdown-item" href="#">bird</a></li>
+                    <li><a class="dropdown-item" href="#">other</a></li>
+                </ul>
+            </div>
+            
+        </h2>
+    </div>
+    <div class="col-md-3">
+        <h2>
+            <div class="dropdown">
+                <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">local aspca</a></li>
+                    <li><a class="dropdown-item" href="#">Friends of Homeless Animals</a></li>
+                    <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
+                </ul>
+            </div>
+            
+        </h2>
+    </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-</html>git branch -M master
+
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+   
+}
+.jumbotron {
+    background-color: #F67EDD;
+    padding: px;
+    margin-bottom: 0px;
+    width: 945px;
+
+}
+
+h1 {
+    font-family: "Comfortaa";
+    font-size: 50px;
+    color: white;
+}
+h3 {
+
+    font-family: "Comfortaa";
+
+}
+
+h2 {
+    background-color: #E724F1; 
+    font-family: "Comfortaa";
+    padding: 20px;
+    margin :0;
+    border: 0px;
+    width: 900px;
+   
+
+
+
+}
+.navbar { 
+    background-color: #E724F1;
+    color: white;
+  
+    
+    padding: 1px;
+
+
+}
+.fa-cog {
+    color: white;
+  }
+
+.dropdown-toggle::after {
+    display: none;
+
+}
+
+form{
+    font-family: "Comfortaa";
+}
