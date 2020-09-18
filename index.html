@@ -25,12 +25,12 @@
                     <h3><a class="btn btn-sm" href="#"><i class="fas fa-paw fa-2x fa-cog"></i></a></h3>
                 </div>
                     <div class="col-4">
-                    <h1 class="text-center">PetMatch</h1>
+                    <h1 class="text-center" id="pMatch">PetMatch</h1>
                 </div>
                 <div class="col-4 text-right">
                     <button class="btn btn-outline-light">login</button>
                 </div>
-                <div class="col text-right">
+                <div class="col text-right align-self-end">
                     <form class="" action="">
                         <input type="text" placeholder="       search" name="search">
                         <button type="submit"><i class="fas fa-search"></i></button>
@@ -39,77 +39,120 @@
             </div>
         </div>
     </header>
-<!--
-    <nav class="navbar navbar-fixed-top ">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">PM
-                </a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Dog Love </a></li>
-                <li class="dropdown "> Cat Love </li>
-                <li class="dropdown"> Other Love </li>
-                <li class="dropdown"> Agencies </li>
-            </ul>
-        </div>
-    </nav> -->
-<div class="row justify-content-center">
-    <div class=" col-md-3">
-        <h2 class="">
-            <div class="dropdown">
-                <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><i class="fas fa-chevron-circle-down"></i></span></button>
-                <ul class="dropdown-menu">
+
+ <!--<nav class="navbar navbar-fixed-top " >
+        <div class="row text-center">
+            <div class="col dropdown">
+                <button class="btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><i class="fas fa-chevron-circle-down"></i></span></button>
+                <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="#">Breed</a></li>
                     <li><a class="dropdown-item" href="#">Age</a></li>
                     <li><a class="dropdown-item" href="#">other?</a></li>
                 </ul>
-            </div>
-            
-        </h2>
-    </div>
-    <div class="col-md-3">
-        <h2>
-            <div class="dropdown">
-                <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
-                <ul class="dropdown-menu">
+            </div>     
+            <div class="col dropdown">
+                <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">  cats  <span><i class="fas fa-chevron-circle-down"></i></span></button>
+                <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="#">breed</a></li>
                     <li><a class="dropdown-item" href="#">age</a></li>
                     <li><a class="dropdown-item" href="#">longhair</a></li>
                     <li><a class="dropdown-item" href="#">shorthair</a></li>
                 </ul>
             </div>
-            
-        </h2>
-    </div>
-    <div class="col-md-3">
-        <h2>
-            <div class="dropdown">
+            <div class=" dropdown" id=>
                 <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="#">small & furry</a></li>
                     <li><a class="dropdown-item" href="#">reptile</a></li>
                     <li><a class="dropdown-item" href="#">bird</a></li>
                     <li><a class="dropdown-item" href="#">other</a></li>
                 </ul>
             </div>
-            
-        </h2>
-    </div>
-    <div class="col-md-3">
-        <h2>
-            <div class="dropdown">
+            <div class="col dropdown">
                 <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="#">local aspca</a></li>
                     <li><a class="dropdown-item" href="#">Friends of Homeless Animals</a></li>
                     <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
                 </ul>
             </div>
             
-        </h2>
+        </div>
+
+    </nav>--> 
+<div class="header " >
+    <div class="row ">
+        <div class=" col-md-3">
+            <h2 class="">
+                <div class="dropdown">
+                    <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><!--<i class="fas fa-chevron-circle-down"></i>--></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Breed</a></li>
+                        <li><a class="dropdown-item" href="#">Age</a></li>
+                        <li><a class="dropdown-item" href="#">other?</a></li>
+                    </ul>
+                </div>
+                
+            </h2>
+        </div>
+        <div class="col-md-3">
+            <h2>
+                <div class="dropdown">
+                    <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">breed</a></li>
+                        <li><a class="dropdown-item" href="#">age</a></li>
+                        <li><a class="dropdown-item" href="#">longhair</a></li>
+                        <li><a class="dropdown-item" href="#">shorthair</a></li>
+                    </ul>
+                </div>
+                
+            </h2>
+        </div>
+        <div class="col-md-3">
+            <h2>
+                <div class="dropdown">
+                    <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">small & furry</a></li>
+                        <li><a class="dropdown-item" href="#">reptile</a></li>
+                        <li><a class="dropdown-item" href="#">bird</a></li>
+                        <li><a class="dropdown-item" href="#">other</a></li>
+                    </ul>
+                </div>
+                
+            </h2>
+        </div>
+        <div class="col-md-3">
+            <h2>
+                <div class="dropdown">
+                    <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">local aspca</a></li>
+                        <li><a class="dropdown-item" href="#">Friends of Homeless Animals</a></li>
+                        <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
+                    </ul>
+                </div>
+                
+            </h2>
+        </div>
+    </div>
+</div>  
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 mt-5 square" id="pic">
+          <a href="#"> <img src="img/dog-2.jpeg" class="img-fluid landscape " /></a>
+        </div>
+        <div class="col-4 mt-5 square" id="pic">
+            <a href="#" ><img src="img/cat1.jpeg" class="img-fluid landscape" /></a>
+        </div>
+        <div class="col-4 mt-5 square" id="pic">
+            <a href="#"><img src="img/tokay.jpeg" class="img-fluid landscape" /></a>
+        </div>
     </div>
 </div>
+
 
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
