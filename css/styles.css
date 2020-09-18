@@ -10,10 +10,14 @@ body {
 
 .jumbotron {
     background-color: #F67EDD;
-    padding: 72px 25px 15px;
+    padding: 72px 25px 15;
     margin-bottom: 0px;
     width: px;
 }
+/*section.jumbotron{
+    background-color: rgb(153, 167, 121);
+    padding: 150 150 150 250;
+}*/
 
 h1 {
     font-family: "Comfortaa";
@@ -24,14 +28,14 @@ h3 {
     font-family: "Comfortaa";
 }
 
-/*h2 {
+h2 {
     background-color: #E724F1; 
     font-family: "Comfortaa";
     padding: 25px;
     margin :0;
     border: 0px;
     width: 100%;
-}*/
+}
 
 nav { 
     background-color: #E724F1; 
@@ -76,7 +80,7 @@ form{
 
 
 
-    #pic {
+#pic {
         width: 100%;
         height: auto;
         background-position: 50% 50%;
