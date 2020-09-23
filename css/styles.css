@@ -52,13 +52,10 @@ form{
     font-family: "Comfortaa";
 }
 
-.header {
-    background-color: #E724F1; 
-    font-family: "Comfortaa"; 
-    text-align: center;
+
    
 
-}
+
 .dropdown-menu {
     color:  #F1F57F;
     background-color: #0BE8DB;
@@ -97,13 +94,21 @@ form{
 }
 
 #picDiv {
-    padding: 100px;
+   padding:50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2px;
+        border-style: ;
+        border-color: ;
+        margin-top: px;
+        background-color: cornsilk;
 }
 
 
 
 footer {
-    background-color: #E724F1;
+    background-color: #F67EDD;
     padding: 8px;
     color: white;
     font-family: "Comfortaa";
@@ -147,9 +152,7 @@ label {
     
 }
 
-.modal-body {
-    
-}
+
 
 #modButtons {
   background-color: #F67EDD;
@@ -157,4 +160,17 @@ label {
    
 }
 
+/*#pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
+#sCard {
+    background-color: #0BE8DB;
+    
+}
+
+#cardCont {
+    background-color: cornsilk;
+}
