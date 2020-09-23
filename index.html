@@ -18,147 +18,273 @@
 </head>
 
 <body>
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-4 col-sm-2">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-2">
                     <h3><a class="btn btn-sm" href="#"><i class="fas fa-paw fa-2x fa-cog"></i></a></h3>
                 </div>
-                    <div class="col-4 col-sm-2">
+                <div class="col-8">
                     <h1 class="text-center" id="pMatch">PetMatch</h1>
                 </div>
-                <div class="col-4 col-sm-2">
-                    <button class="btn btn-outline-light">login</button>
+                <div class="col-2" >
+                    <button class="btn btn-outline-light" id="loginButton">login</button>
                 </div>
-                <div class="col text-right align-self-end">
-                    <form class="" action="">
-                        <input type="text" placeholder="       search" name="search">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
+                <!--<div class="row ">
+                    <div class="col d-none d-lg-block float-right" id="searchBar">
+                        <form class="form-control-sm "  action="serch">
+                            <input class="" type="text" type="email" placeholder="       search" name="search">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>-->
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
- <!--<nav class="navbar navbar-fixed-top " >
-        <div class="row text-center">
-            <div class="col dropdown">
-                <button class="btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><i class="fas fa-chevron-circle-down"></i></span></button>
-                <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="#">Breed</a></li>
-                    <li><a class="dropdown-item" href="#">Age</a></li>
-                    <li><a class="dropdown-item" href="#">other?</a></li>
-                </ul>
-            </div>     
-            <div class="col dropdown">
-                <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">  cats  <span><i class="fas fa-chevron-circle-down"></i></span></button>
-                <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="#">breed</a></li>
-                    <li><a class="dropdown-item" href="#">age</a></li>
-                    <li><a class="dropdown-item" href="#">longhair</a></li>
-                    <li><a class="dropdown-item" href="#">shorthair</a></li>
-                </ul>
+    <div id="modalLogin" class="modal fade " role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4> Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="loginEmail">Email</label>
+                                    <input type="email" class="form-control" id="loginEmail" placeholder="Email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" placeholder="Password"/>  
+                                </div>
+                            </div>
+                            <div class="form-row" >
+                                <button type="button" class="btn btn-outline-light" data-dismiss="modal" id="modButtons">Cancel</button>
+                                <button type="button" class="btn btn-outline-light" id="modButtons">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class=" dropdown" id=>
-                <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
-                <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="#">small & furry</a></li>
-                    <li><a class="dropdown-item" href="#">reptile</a></li>
-                    <li><a class="dropdown-item" href="#">bird</a></li>
-                    <li><a class="dropdown-item" href="#">other</a></li>
-                </ul>
+        </div>
+    </div>
+
+
+    <div class="header" >
+        <div class="row">
+            <div class=" col-md-3">
+                <h2 class="">
+                    <div class="dropdown">
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <!--<span><i class="fas fa-chevron-circle-down"></i>--></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Breed</a></li>
+                            <li><a class="dropdown-item" href="#">Age</a></li>
+                            <li><a class="dropdown-item" href="#">other?</a></li>
+                        </ul>
+                    </div>
+                    
+                </h2>
             </div>
-            <div class="col dropdown">
-                <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
-                <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="#">local aspca</a></li>
-                    <li><a class="dropdown-item" href="#">Friends of Homeless Animals</a></li>
-                    <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
-                </ul>
+            <div class="col-md-3">
+                <h2>
+                    <div class="dropdown">
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">breed</a></li>
+                            <li><a class="dropdown-item" href="#">age</a></li>
+                            <li><a class="dropdown-item" href="#">longhair</a></li>
+                            <li><a class="dropdown-item" href="#">shorthair</a></li>
+                        </ul>
+                    </div>
+                    
+                </h2>
+            </div>
+            <div class="col-md-3">
+                <h2>
+                    <div class="dropdown">
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">small & furry</a></li>
+                            <li><a class="dropdown-item" href="#">reptile</a></li>
+                            <li><a class="dropdown-item" href="#">bird</a></li>
+                            <li><a class="dropdown-item" href="#">other</a></li>
+                        </ul>
+                    </div>
+                    
+                </h2>
+            </div>
+            <div class="col-md-3">
+                <h2>
+                    <div class="dropdown">
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">local aspca</a></li>
+                            <li><a class="dropdown-item" href="#">Friends of <br> Homeless Animals</a></li>
+                            <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
+                        </ul>
+                    </div>
+                    
+                </h2>
+            </div>
+        </div>
+    </div>  
+
+   <!--<nav class="navbar navbar-expand-sm" >
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="pMatchNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse row" id="pMatchNav">
+                    <div class="col-md-3">
+                        
+                            
+                                <div class="dropdown">
+                                    <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><i class="fas fa-chevron-circle-down"></i></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Breed</a></li>
+                                        <li><a class="dropdown-item" href="#">Age</a></li>
+                                        <li><a class="dropdown-item" href="#">other?</a></li>
+                                    </ul>
+                                </div>
+                            </div>       
+                            
+                     
+                        
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">breed</a></li>
+                                        <li><a class="dropdown-item" href="#">age</a></li>
+                                        <li><a class="dropdown-item" href="#">longhair</a></li>
+                                        <li><a class="dropdown-item" href="#">shorthair</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        
+                        
+                            <div class="col-md-3">
+                                <div class="dropdown navbar-nav">
+                                    <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">small & furry</a></li>
+                                        <li><a class="dropdown-item" href="#">reptile</a></li>
+                                        <li><a class="dropdown-item" href="#">bird</a></li>
+                                        <li><a class="dropdown-item" href="#">other</a></li>
+                                    </ul>
+                                </div>
+                            </div>      
+                           
+                       
+                       
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">local aspca</a></li>
+                                        <li><a class="dropdown-item" href="#">Friends of <br> Homeless Animals</a></li>
+                                        <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                </div>
+        </div>
+    </nav>  -->
+
+    <div class="container-fluid" id="picDiv">
+        <div class="row">
+            <div class="col-4 mt-5" id="pic">
+                <div class="media">
+                    <div class="media-body">
+                        <h3> Featured Dogs</h3>
+                        <a href="#"> <img class="img-fluid w-100" src="img/dog-7.jpeg"/></a>
+                        <p> 3 year old Chihuahua mix</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mt-5" id="pic">
+                <div class="media">
+                    <div class="media-body">
+                        <h3>Featured Cats</h3>
+                        <a href="#" ><img class="img-fluid w-100" src="img/cat2.jpeg"/></a>
+                        <p>5 year old Maine Coon mix</p>
+                    </div>
+                </div>
             </div>
             
-        </div>
-
-    </nav>--> 
-<div class="header " >
-    <div class="row ">
-        <div class=" col-md-3">
-            <h2 class="">
-                <div class="dropdown">
-                    <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <span><!--<i class="fas fa-chevron-circle-down"></i>--></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Breed</a></li>
-                        <li><a class="dropdown-item" href="#">Age</a></li>
-                        <li><a class="dropdown-item" href="#">other?</a></li>
-                    </ul>
+            <div class="col-4 mt-5" id="pic">
+                <div class="media">
+                    <div class="media-body">
+                        <h3>Others!</h3>
+                    <a href="#"><img class="img-fluid w-100" src="img/tokay2.jpeg"/></a>
+                    <p> Age unknown Tokay Gecko</p>
+                    </div>
                 </div>
-                
-            </h2>
-        </div>
-        <div class="col-md-3">
-            <h2>
-                <div class="dropdown">
-                    <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">breed</a></li>
-                        <li><a class="dropdown-item" href="#">age</a></li>
-                        <li><a class="dropdown-item" href="#">longhair</a></li>
-                        <li><a class="dropdown-item" href="#">shorthair</a></li>
-                    </ul>
-                </div>
-                
-            </h2>
-        </div>
-        <div class="col-md-3">
-            <h2>
-                <div class="dropdown">
-                    <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">small & furry</a></li>
-                        <li><a class="dropdown-item" href="#">reptile</a></li>
-                        <li><a class="dropdown-item" href="#">bird</a></li>
-                        <li><a class="dropdown-item" href="#">other</a></li>
-                    </ul>
-                </div>
-                
-            </h2>
-        </div>
-        <div class="col-md-3">
-            <h2>
-                <div class="dropdown">
-                    <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">local aspca</a></li>
-                        <li><a class="dropdown-item" href="#">Friends of Homeless Animals</a></li>
-                        <li><a class="dropdown-item" href="#">Mutts 4 Rescue</a></li>
-                    </ul>
-                </div>
-                
-            </h2>
-        </div>
-    </div>
-</div>  
-
-<section class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 mt-5 square" id="pic">
-            <a href="#"> <img src="img/dog-7.jpeg" class="img-fluid landscape " /></a>
-            </div>
-            <div class="col-4 mt-5 square" id="pic">
-                <a href="#" ><img src="img/cat2.jpeg" class="img-fluid landscape" /></a>
-            </div>
-            <div class="col-4 mt-5 square" id="pic">
-                <a href="#"><img src="img/tokay2.jpeg" class="img-fluid landscape" /></a>
             </div>
         </div>
     </div>
-</section>
 
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Looking </p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="dogRadio" id="dogRadio" >
+                        <label class="form-check-label" for="dogRadio">Dogs</label>
+                    </div> 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="catRadio" id="catRadio" >
+                        <label class="form-check-label" for="dogRadio">Cats</label>
+                    </div> 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="otherRadio" id="otherRadio" >
+                        <label class="form-check-label" for="otherRadio">Other</label>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer class="site-footer fixed-bottom">
+        <div class="container">
+            <div class="row align-items-center justify-content-around">
+                <div class="col col-md-3 text-center" id="contact">
+                    <a role="button" class="btn btn-link" href="tel:+18001234567"><i class="fa fa-phone fa-lg text-primary"></i> 1-800-123-4567</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:Adopt@PetMatch.com"><i class="fa fa-envelope-o fa-lg text-primary"></i> adopt@PetMatch.com</a>
+                </div>
+            
+                <div class="col-md-6 d-none d-md-block ">
+                    <form class="form" id="subForm">
+                        <div class="form-group  ">
+                            <label for="email" class=""> SUBSCRIBE TO OUR NEWSLETTER <br></label>
+                            <br>
+                            <input type="email" class="form-control" id="email" name="subscribe" placeholder="Enter Email.."/> 
+                        </div> 
+                        <button type="submit" class="btn btn-light" value="subscribe" id="btn1">Submit</button>
+                    </form>  
+            </div>
+            <!--div class="col-sm-3 text-center">
+            
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>-->
+            </div>
+        </div>  
+    </footer>
 
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
 </body>
 
 </html>
