@@ -174,3 +174,15 @@ label {
 #cardCont {
     background-color: cornsilk;
 }
+
+.card {
+    background-color: #0BE8DB;
+    border-color: #F67EDD;
+    border-width: 3px;
+    
+}
+.card-header {
+    background-color: cornsilk;
+    height: 25px;
+    font-size: 17px;
+}
