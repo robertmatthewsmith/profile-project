@@ -22,7 +22,22 @@
         <div class="container">
             <div class="row align-item-center">
                 <div class="col-2">
-                    <h3><a class="btn btn-sm" href="index.html"><i class="fas fa-paw fa-2x fa-cog"></i></a></h3>
+                    <div class="" id="navTog">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                          <div class="pos-f-t p-1">
+                            <p><a href="index.html" class="btn btn-lg text-white" id="togBut">home</a></p>
+                            <p><a href="dogs.html" class="btn text-white" id="togBut">dogs</a></p>
+                            <p><a href="cats.html" class="btn text-white" id="togBut">cats</a></p>
+                            <p><a href="#" class="btn text-white" id="togBut">other</a></p>
+
+                          </div>
+                        </div>
+                        <nav class="navbar navbar-dark" id="navBut">
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" >
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        </nav>
+                    </div>
                 </div>
                 <div class="col-8">
                     <h1 class="text-center" id="pMatch">Cats</h1>
@@ -80,20 +95,17 @@
                     <div class="dropdown" id="breed">
                         <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="breed">Breeds <!--<span><i class="fas fa-chevron-circle-down"></i>--></span></button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Alaskan_Malamute">Alaskan Malamute</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/American_Bulldog">American Bulldog</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Boston_Terrier">Boston Terrier</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Dachshund">Dachshund</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/German_Pinscher">German Pinscher</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Havanese_dog">Havanese </a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Japanese_Spitz">Japanese Spitz</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Mountain_Cur">Mountain Cur</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Newfoundland_(dog)">Newfoundland</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Pomeranian_(dog)">Pomeranian </a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Pug">Pug</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Rat_Terrier">Rat Terrier</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/St._Bernard_(dog)">St. Bernard</a></li>
-                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Whippet">Whippet</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Domestic_short-haired_cat">Domestic Shorthair</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Domestic_long-haired_cat">Domestic Longhair</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/American_Bobtail">American Bobtail</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Bengal_cat">Bengal</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/British_Shorthair">British Shorthair</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Himalayan_cat">Himalayan </a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Maine_Coon">Maine Coon</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Munchkin_cat">Munchkin</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Ragdoll">Ragdoll</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Siamese_cat">Siamese </a></li>
+                            
                         </ul>
                     </div>
                     
@@ -142,6 +154,8 @@
             </div>
         </div>
     </div>  
+  
+    
 
     <footer class="site-footer fixed-bottom">
         <div class="container">

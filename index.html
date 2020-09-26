@@ -20,9 +20,25 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row align-item-center">
+            <div class="row text-center">
                 <div class="col-2">
-                    <h3><a class="btn btn-sm" href="#"><i class="fas fa-paw fa-2x fa-cog"></i></a></h3>
+                    <div class="" id="navTog">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                          <div class="pos-f-t p-1">
+                            <p><a href="#" class="btn btn-lg text-white" id="togBut">home</a></p>
+                            <p><a href="dogs.html" class="btn text-white" id="togBut">dogs</a></p>
+                            <p><a href="cats.html" class="btn text-white" id="togBut">cats</a></p>
+                            <p><a href="#" class="btn text-white" id="togBut">other</a></p>
+
+                          </div>
+                        </div>
+                        <nav class="navbar navbar-dark" id="navBut">
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" >
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        </nav>
+                    </div>
+                    <!--<h3><a class="btn btn-sm" href="#"><i class="fas fa-paw fa-2x fa-cog"></i></a></h3>-->
                 </div>
                 <div class="col-8">
                     <h1 class="text-center" id="pMatch">PetMatch</h1>
@@ -32,10 +48,26 @@
                 </div>
                 <!--<div class="row ">
                     <div class="col d-none d-lg-block float-right" id="searchBar">
-                        <form class="form-control-sm "  action="serch">
+                        <form class="form-control-sm "  action="search">
                             <input class="" type="text" type="email" placeholder="       search" name="search">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
+                    </div>-->
+                    <!--<div class="" id="navTog">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                          <div class=" p-1">
+                            <p class="text-white"><a href="#" class="btn btn-lg text-white" id="togBut">home</a></p>
+                            <p class="text-white"><a href="dogs.html" class="btn text-white" id="togBut">dogs</a></p>
+                            <p class="text-white"><a href="cats.html" class="btn text-white" id="togBut">cats</a></p>
+                            <p class="text-white"><a href="#" class="btn text-white" id="togBut">other</a></p>
+
+                          </div>
+                        </div>
+                        <nav class="navbar navbar-dark" id="navBut">
+                          <button class="navbar-toggler btn-out" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" >
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        </nav>
                     </div>-->
                 </div>
             </div>
@@ -79,7 +111,7 @@
             <div class=" col-md-3">
                 <h2>
                     <div class="dropdown">
-                        <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">dogs <!--<span><i class="fas fa-chevron-circle-down"></i>--></span></button>
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" >dogs <!--<span><i class="fas fa-chevron-circle-down"></i>--></span></button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="dogs.html">Breed</a></li>
                             <li><a class="dropdown-item" href="dogs.html">Age</a></li>
@@ -92,21 +124,20 @@
             <div class="col-md-3">
                 <h2>
                     <div class="dropdown">
-                        <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton"> cats </button>
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown"> cats </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">breed</a></li>
-                            <li><a class="dropdown-item" href="#">age</a></li>
-                            <li><a class="dropdown-item" href="#">longhair</a></li>
-                            <li><a class="dropdown-item" href="#">shorthair</a></li>
+                            <li><a class="dropdown-item" href="cats.html">breed</a></li>
+                            <li><a class="dropdown-item" href="cats.html">age</a></li>
+                            <li><a class="dropdown-item" href="cats.html">longhair</a></li>
+                            <li><a class="dropdown-item" href="cats.html">shorthair</a></li>
                         </ul>
                     </div>
-                    
                 </h2>
             </div>
             <div class="col-md-3">
                 <h2>
                     <div class="dropdown">
-                        <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">other</button>
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown">other</button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">small & furry</a></li>
                             <li><a class="dropdown-item" href="#">reptile</a></li>
@@ -114,13 +145,12 @@
                             <li><a class="dropdown-item" href="#">other</a></li>
                         </ul>
                     </div>
-                    
                 </h2>
             </div>
             <div class="col-md-3">
                 <h2>
                     <div class="dropdown">
-                        <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown" id="dropdownMenuButton">agencies</button>
+                        <button class=" btn btn-lg btn-outline-light dropdown-toggle text-right" type="button" data-toggle="dropdown">agencies</button>
                         <ul class="dropdown-menu table-responsive">
                             <li><a class="dropdown-item" href="https://kcpetproject.org/">KC Pet <br> Project</a></li>
                             <li><a class="dropdown-item" href="https://foha.org/">Friends of <br> Homeless Animals</a></li>
@@ -192,29 +222,55 @@
                                     </ul>
                                 </div>
                             </div>
-                    
                 </div>
         </div>
     </nav>  -->
 
-   
+   <!--<section>
+   <h1>
+       <p class="text-dark text-center">Featured Pets</p>
+   </h1>
+       <div class="card-deck text-center">
+           <div class="card ml-5">
+               <img src="img/dog-7.jpeg">
+               <div class="card-body">
+                   <p>JoJo<br>3 year old chihuahua mix</p>
+               </div>
+           </div>
+           <div class="card">
+               <img src="img/cat2.jpeg">
+               <div class="card-body">
+                   <p>Dante<br>5 year old Maine Coon Mix</p>
+               </div>
+           </div>
+           <div class="card mr-5">
+               <img src="img/tokay2.jpeg">
+               <div class="card-body">
+                   <p>Snaggles<br>Tokay Gecko<br>age unknown</p>
+               </div>
+           </div>
+       </div>
+    -->
+
+   </section id="sect">
     <div class="container-fluid" id="picDiv">
+        <h1 class="text-center text-dark">Featured Pets</h1>
         <div class="row text-center">
             <div class="col-4 ">
                 <div class="media">
                     <div class="media-body">
-                        <h3>Featured Dogs</h3>
-                        <a href="dogs.html"> <img class="w-100 d-inline-block" src="img/dog-7.jpeg"/></a>
-                        <p class=""> 3 year old Chihuahua mix</p>
+                        
+                        <a href="dogs.html"> <img class="w-100 d-inline-block border border-dark rounded" src="img/dog-7.jpeg"/></a>
+                        <p class="font-weight-bold"> 3 year old Chihuahua mix</p>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="media">
                     <div class="media-body">
-                        <h3>Featured Cats</h3>
-                        <a href="cats.html" ><img class="img-fluid w-100 d-inline-block" src="img/cat2.jpeg"/></a>
-                        <p>5 year old Maine Coon mix</p>
+                        
+                        <a href="cats.html" ><img class="img-fluid w-100 d-inline-block border border-dark rounded" src="img/cat2.jpeg"/></a>
+                        <p class="font-weight-bold">5 year old Maine Coon mix</p>
                     </div>
                 </div>
             </div>
@@ -222,9 +278,9 @@
             <div class="col-4">
                 <div class="media">
                     <div class="media-body">
-                        <h3>Featured Others</h3>
-                    <a href="#"><img class="img-fluid w-100 d-inline-block" src="img/tokay2.jpeg"/></a>
-                    <p> Age unknown Tokay Gecko</p>
+                       
+                    <a href="#"><img class="img-fluid w-100 d-inline-block border border-dark rounded" src="img/tokay2.jpeg"/></a>
+                    <p class="font-weight-bold">Tokay Gecko age unknown</p>
                     </div>
                 </div>
             </div>
@@ -237,23 +293,39 @@
             <div class="row text-center justify-content-center">
                 <div class="col-6 m-5 d-none d-md-block">
                     <div class="card" id="sCard">
-                            <div class="card-header text-light">
-                                <p class="display-4">Search </p>
+                        <div class="card-header text-light" id="searchHead">
+                            <p class="display-4">Search </p>
+                        </div>
+                        <div class="card-body text-center">
+                            <!--<div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="dogRadio" id="dogRadio" >
+                                <label class="form-check-label" for="dogRadio">Dogs</label>
+                            </div> 
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="catRadio" id="catRadio" >
+                                <label class="form-check-label" for="dogRadio">Cats</label>
+                            </div> 
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="otherRadio" id="otherRadio" >
+                                <label class="form-check-label" for="otherRadio">Other</label>
+                            </div> -->
+                            <form class="form-control-sm "  action="search">
+                                <input class="" type="text" placeholder="" name="search">
+                                <button type="submit"><i class="fas fa-search"></i></button> 
+                            </form>
+                            <form class="pt-4">
+                                <!--<input class="" type="number" placeholder="             Zip Code" name="distance">
+                                <button> submit</button>-->
+                            </form>
+                            <div class="dropdown p-4">
+                                <button class=" btn btn-lg btn-light dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton2">distance<span><i class="fas fa-chevron-circle-down"></i></span></button>
+                                <ul class="dropdown-menu text-center" id="dropMenu">
+                                    <li class="dropdown-item">within 20 miles</li>
+                                    <li class="dropdown-item">within 50 miles</li>
+                                    <li class="dropdown-item">within 100 miles</li>
+                                    <li class="dropdown-item">any distance</li>
                             </div>
-                            <div class="card-body">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="dogRadio" id="dogRadio" >
-                                    <label class="form-check-label" for="dogRadio">Dogs</label>
-                                </div> 
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="catRadio" id="catRadio" >
-                                    <label class="form-check-label" for="dogRadio">Cats</label>
-                                </div> 
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="otherRadio" id="otherRadio" >
-                                    <label class="form-check-label" for="otherRadio">Other</label>
-                                </div> 
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

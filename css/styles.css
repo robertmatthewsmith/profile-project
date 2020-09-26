@@ -27,6 +27,7 @@ h1 {
     font-size: 50px;
     color: white;
 }
+
 h3, p {
     font-family: "Comfortaa";
 }
@@ -52,14 +53,29 @@ form{
     font-family: "Comfortaa";
 }
 
+#navTog {
+    background-color: #F67EDD;
+}
 
+#navBut {
+    background-color: #F67EDD;
+    padding: 0px;
+    height: 5px; 
+}
+
+#togBut {
+    background-color: #F67EDD;
+}
    
-
-
 .dropdown-menu {
-    color:  #F1F57F;
     background-color: #0BE8DB;
 }
+
+#dropMenu {
+    background-color: grey;
+    color: white;
+}
+
 #pMatch {
     color: #0BE8DB;
 }
@@ -70,27 +86,20 @@ form{
     padding-bottom: 0px;
 }
 
-
 #pic {
         width: 100%;
         height: auto;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-
 }
+
 #catPic {
     padding: 75px;
-   
-   
-
-
 }
 
 #tGecko {
-    padding: 75px;
-    
-    
+    padding: 75px;    
 }
 
 #picDiv {
@@ -104,8 +113,6 @@ form{
         margin-top: px;
         background-color: cornsilk;
 }
-
-
 
 footer {
     background-color: #F67EDD;
@@ -127,8 +134,7 @@ label {
 #subForm {
     width: 80%;
     margin: auto;
-    padding: 75px px;
-   
+    padding: 75px px; 
 }
 
 #contact{
@@ -142,33 +148,19 @@ label {
 }
 
 .modal {
-    font-family: "comfortaa";
-    
-
+    font-family: "comfortaa";  
 }
 
 .modal-header {
-    background-color: #0BE8DB;
-    
+    background-color: #0BE8DB;   
 }
-
-
 
 #modButtons {
-  background-color: #F67EDD;
-
-   
+  background-color: #F67EDD;  
 }
 
-/*#pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 #sCard {
-    background-color: #0BE8DB;
-    
+    background-color: #0BE8DB;   
 }
 
 #cardCont {
@@ -178,11 +170,16 @@ label {
 .card {
     background-color: #0BE8DB;
     border-color: #F67EDD;
-    border-width: 3px;
-    
+    border-width: 3px; 
 }
 .card-header {
+    background-color: grey;
+    color: white;
+    font-family: "Comfortaa";
+    border-color:#F67EDD ;
+    border-width: 3px;
+}
+
+#sect {
     background-color: cornsilk;
-    height: 25px;
-    font-size: 17px;
 }
